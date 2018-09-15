@@ -1,0 +1,102 @@
+/* CSS File for Types Of Hover Buttons 
+Author: Richa Sharma,
+Creation Date: 17 July 2018
+*/
+@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto");
+body {
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+}
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-row-gap: 48px;
+  grid-template-columns: repeat(3, auto);
+}
+
+/* Title & Text */
+.title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: "Oswald", sans-serif;
+  font-size: 35px;
+  margin-bottom: 48px;
+}
+
+/* Default Button */
+.btn {
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #009ddc;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Button Styles */
+/* Border */
+.btn--border {
+  border: 2px solid #009ddc;
+}
+
+/* Transparent */
+.btn--transparent {
+  background-color: transparent;
+}
+
+/* Color */
+.btn--color {
+  color: #009ddc;
+}
+
+/* Transition */
+.btn--transition {
+  transition: 0.24s ease;
+}
+
+/* Button Hover Effects */
+/* Button #1 - Dashed Border Hover */
+.btn-hover--dashed:hover {
+  border-style: dashed;
+}
+
+/* Button #2 - Rounded Border Hover */
+.btn-hover--rounded:hover {
+  border-radius: 24px;
+}
+
+/* Button #3 - Border */
+.btn-hover--border:hover {
+  color: #009ddc;
+  background-color: transparent;
+}
+
+/* Button #4 - Transparent + Shadow Hover */
+.btn-hover--transparent-shadow:hover {
+  color: #009ddc;
+  background-color: transparent;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24);
+}
+
+/* Button #5 - Transform + Shadow Hover */
+.btn-hover--transform-shadow:hover {
+  transform: translate(0,-8px);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24);
+}
